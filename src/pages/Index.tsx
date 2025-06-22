@@ -1,44 +1,30 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
-
 const Index = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({
+        behavior: 'smooth'
+      });
     }
   };
-
-  return (
-    <div className="min-h-screen bg-white">
+  return <div className="min-h-screen bg-white">
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 py-4 px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold text-slate-800">BISCAYNE</div>
           <div className="hidden md:flex space-x-8">
-            <button
-              onClick={() => scrollToSection('hero')}
-              className="text-slate-600 hover:text-slate-800 transition-colors"
-            >
+            <button onClick={() => scrollToSection('hero')} className="text-slate-600 hover:text-slate-800 transition-colors">
               Home
             </button>
-            <button
-              onClick={() => scrollToSection('suites')}
-              className="text-slate-600 hover:text-slate-800 transition-colors"
-            >
+            <button onClick={() => scrollToSection('suites')} className="text-slate-600 hover:text-slate-800 transition-colors">
               Suites
             </button>
-            <button
-              onClick={() => scrollToSection('amenities')}
-              className="text-slate-600 hover:text-slate-800 transition-colors"
-            >
+            <button onClick={() => scrollToSection('amenities')} className="text-slate-600 hover:text-slate-800 transition-colors">
               Amenities
             </button>
-            <button
-              onClick={() => scrollToSection('contact')}
-              className="text-slate-600 hover:text-slate-800 transition-colors"
-            >
+            <button onClick={() => scrollToSection('contact')} className="text-slate-600 hover:text-slate-800 transition-colors">
               Contact
             </button>
           </div>
@@ -47,12 +33,9 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="hero" className="relative h-screen flex items-center justify-center bg-gradient-to-r from-slate-900 to-slate-700">
-        <div
-          className="absolute inset-0 bg-cover bg-center opacity-40"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200')"
-          }}
-        />
+        <div className="absolute inset-0 bg-cover bg-center opacity-40" style={{
+        backgroundImage: "url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200')"
+      }} />
         <div className="relative z-10 text-center text-white px-6">
           <h1 className="text-2xl md:text-6xl font-light mb-6 tracking-wider">
             BISCAYNE<br />SHORES
@@ -84,11 +67,7 @@ const Index = () => {
             </Button>
           </div>
           <div className="relative h-96">
-            <img
-              src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800"
-              alt="Ocean view"
-              className="w-full h-full object-cover shadow-2xl"
-            />
+            <img src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800" alt="Ocean view" className="w-full h-full object-cover shadow-2xl" />
           </div>
         </div>
       </section>
@@ -97,11 +76,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 order-2 md:order-1">
-            <img
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
-              alt="Tropical paradise"
-              className="w-full h-full object-cover shadow-2xl"
-            />
+            <img src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" alt="Tropical paradise" className="w-full h-full object-cover shadow-2xl" />
           </div>
           <div className="order-1 md:order-2">
             <h2 className="text-4xl md:text-5xl font-light text-slate-800 mb-6 leading-tight">
@@ -140,11 +115,7 @@ const Index = () => {
             </Button>
           </div>
           <div className="relative h-96">
-            <img
-              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800"
-              alt="Luxury resort"
-              className="w-full h-full object-cover shadow-2xl"
-            />
+            <img src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800" alt="Luxury resort" className="w-full h-full object-cover shadow-2xl" />
           </div>
         </div>
       </section>
@@ -153,11 +124,7 @@ const Index = () => {
       <section className="py-20 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 order-2 md:order-1">
-            <img
-              src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800"
-              alt="Modern suite"
-              className="w-full h-full object-cover shadow-2xl"
-            />
+            <img src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800" alt="Modern suite" className="w-full h-full object-cover shadow-2xl" />
           </div>
           <div className="order-1 md:order-2">
             <h2 className="text-4xl md:text-5xl font-light text-slate-800 mb-6 leading-tight">
@@ -181,7 +148,7 @@ const Index = () => {
       <section className="py-20 px-6">
         <div className="max-fullmx-auto px-[3%]">
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <Card className=" text-white px-8 py-24 flex bg-[#000e35]/90">
+            <Card className="text-white py-24 flex bg-[#000e35]/90 px-[25px]">
               <CardContent className="text-center justify-center flex-1 flex flex-col gap-2">
                 <h3 className="text-2xl font-light">OCEAN VIEW SUITES</h3>
                 <div className="text-5xl font-light">$4,396</div>
@@ -223,11 +190,11 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
-        </div >
-      </section >
+        </div>
+      </section>
 
       {/* Contact Section */}
-      < section id="contact" className="py-20 px-6 bg-slate-100" >
+      <section id="contact" className="py-20 px-6 bg-slate-100">
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-light text-slate-800 mb-6">
             WATERFRONT SERENITY WITH<br />
@@ -241,10 +208,10 @@ const Index = () => {
             CONTACT US
           </Button>
         </div>
-      </section >
+      </section>
 
       {/* Footer */}
-      < footer className="bg-slate-900 text-white py-12 px-6" >
+      <footer className="bg-slate-900 text-white py-12 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -282,9 +249,7 @@ const Index = () => {
             <p>&copy; 2024 Biscayne Shores. All rights reserved.</p>
           </div>
         </div>
-      </footer >
-    </div >
-  );
+      </footer>
+    </div>;
 };
-
 export default Index;
