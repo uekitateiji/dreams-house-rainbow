@@ -17,25 +17,25 @@ const Index = () => {
         <div className="max-w-7xl mx-auto flex justify-between items-center">
           <div className="text-2xl font-bold text-slate-800">BISCAYNE</div>
           <div className="hidden md:flex space-x-8">
-            <button 
+            <button
               onClick={() => scrollToSection('hero')}
               className="text-slate-600 hover:text-slate-800 transition-colors"
             >
               Home
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('suites')}
               className="text-slate-600 hover:text-slate-800 transition-colors"
             >
               Suites
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('amenities')}
               className="text-slate-600 hover:text-slate-800 transition-colors"
             >
               Amenities
             </button>
-            <button 
+            <button
               onClick={() => scrollToSection('contact')}
               className="text-slate-600 hover:text-slate-800 transition-colors"
             >
@@ -47,24 +47,21 @@ const Index = () => {
 
       {/* Hero Section */}
       <section id="hero" className="relative h-screen flex items-center justify-center bg-gradient-to-r from-slate-900 to-slate-700">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center opacity-40"
           style={{
             backgroundImage: "url('https://images.unsplash.com/photo-1582719478250-c89cae4dc85b?w=1200')"
           }}
         />
         <div className="relative z-10 text-center text-white px-6">
-          <h1 className="text-6xl md:text-8xl font-light mb-6 tracking-wider">
+          <h1 className="text-2xl md:text-6xl font-light mb-6 tracking-wider">
             BISCAYNE<br />SHORES
           </h1>
-          <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto leading-relaxed">
+          <p className="text-xl md:text-2xl font-light mb-8 max-w-2xl mx-auto leading-relaxed tracking-widest">
             A WATERFRONT RETREAT OF<br />
             UNPRECEDENTED LUXURY IN<br />
             SOUTH FLORIDA'S JEWEL
           </p>
-          <Button className="bg-amber-600 hover:bg-amber-700 text-white px-8 py-3 text-lg font-light">
-            DISCOVER MORE
-          </Button>
         </div>
       </section>
 
@@ -77,9 +74,9 @@ const Index = () => {
               BOUNDLESS AS THE OCEAN
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8 text-lg">
-              Experience the ultimate in waterfront luxury where pristine beaches meet 
-              world-class amenities. Our oceanfront suites offer unparalleled views of 
-              the Atlantic, while our private marina provides exclusive access to the 
+              Experience the ultimate in waterfront luxury where pristine beaches meet
+              world-class amenities. Our oceanfront suites offer unparalleled views of
+              the Atlantic, while our private marina provides exclusive access to the
               crystal-clear waters of Biscayne Bay.
             </p>
             <Button variant="outline" className="border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white px-6 py-2">
@@ -87,9 +84,9 @@ const Index = () => {
             </Button>
           </div>
           <div className="relative h-96">
-            <img 
-              src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800" 
-              alt="Ocean view" 
+            <img
+              src="https://images.unsplash.com/photo-1439066615861-d1af74d74000?w=800"
+              alt="Ocean view"
               className="w-full h-full object-cover shadow-2xl"
             />
           </div>
@@ -100,9 +97,9 @@ const Index = () => {
       <section className="py-20 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 order-2 md:order-1">
-            <img 
-              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800" 
-              alt="Tropical paradise" 
+            <img
+              src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800"
+              alt="Tropical paradise"
               className="w-full h-full object-cover shadow-2xl"
             />
           </div>
@@ -112,9 +109,9 @@ const Index = () => {
               OASIS
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8 text-lg">
-              Immerse yourself in the natural beauty of our tropical gardens and 
-              infinity pools that seem to merge seamlessly with the horizon. Every 
-              detail has been carefully curated to create an atmosphere of 
+              Immerse yourself in the natural beauty of our tropical gardens and
+              infinity pools that seem to merge seamlessly with the horizon. Every
+              detail has been carefully curated to create an atmosphere of
               tranquility and sophistication.
             </p>
             <Button variant="outline" className="border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white px-6 py-2">
@@ -133,9 +130,9 @@ const Index = () => {
               LUXURY
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8 text-lg">
-              Our waterfront location offers direct access to some of Florida's most 
-              pristine waters. Whether you're seeking adventure on the open sea or 
-              peaceful moments by the shore, our concierge team ensures every 
+              Our waterfront location offers direct access to some of Florida's most
+              pristine waters. Whether you're seeking adventure on the open sea or
+              peaceful moments by the shore, our concierge team ensures every
               experience exceeds expectations.
             </p>
             <Button variant="outline" className="border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white px-6 py-2">
@@ -143,9 +140,9 @@ const Index = () => {
             </Button>
           </div>
           <div className="relative h-96">
-            <img 
-              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800" 
-              alt="Luxury resort" 
+            <img
+              src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?w=800"
+              alt="Luxury resort"
               className="w-full h-full object-cover shadow-2xl"
             />
           </div>
@@ -156,9 +153,9 @@ const Index = () => {
       <section className="py-20 px-6 bg-slate-50">
         <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
           <div className="relative h-96 order-2 md:order-1">
-            <img 
-              src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800" 
-              alt="Modern suite" 
+            <img
+              src="https://images.unsplash.com/photo-1578683010236-d716f9a3f461?w=800"
+              alt="Modern suite"
               className="w-full h-full object-cover shadow-2xl"
             />
           </div>
@@ -169,8 +166,8 @@ const Index = () => {
               REDEFINED
             </h2>
             <p className="text-slate-600 leading-relaxed mb-8 text-lg">
-              Each suite is a masterpiece of contemporary design, featuring floor-to-ceiling 
-              windows, premium furnishings, and state-of-the-art amenities. Experience 
+              Each suite is a masterpiece of contemporary design, featuring floor-to-ceiling
+              windows, premium furnishings, and state-of-the-art amenities. Experience
               the perfect blend of comfort and sophistication in every detail.
             </p>
             <Button variant="outline" className="border-slate-800 text-slate-800 hover:bg-slate-800 hover:text-white px-6 py-2">
@@ -182,27 +179,21 @@ const Index = () => {
 
       {/* Pricing Section */}
       <section className="py-20 px-6">
-        <div className="max-w-7xl mx-auto">
+        <div className="max-fullmx-auto px-[3%]">
           <div className="grid md:grid-cols-2 gap-8 mb-16">
-            <Card className="bg-slate-900 text-white p-8">
-              <CardContent className="text-center">
-                <h3 className="text-2xl font-light mb-4">OCEAN VIEW SUITES</h3>
-                <div className="text-5xl font-light mb-2">$4,396</div>
-                <p className="text-slate-300 mb-6">per night</p>
-                <Button className="bg-amber-600 hover:bg-amber-700 w-full">
-                  BOOK NOW
-                </Button>
+            <Card className=" text-white px-8 py-24 flex bg-[#000e35]/90">
+              <CardContent className="text-center justify-center flex-1 flex flex-col gap-2">
+                <h3 className="text-2xl font-light">OCEAN VIEW SUITES</h3>
+                <div className="text-5xl font-light">$4,396</div>
+                <p className="text-slate-300">per night</p>
               </CardContent>
             </Card>
-            
-            <Card className="bg-slate-900 text-white p-8">
-              <CardContent className="text-center">
-                <h3 className="text-2xl font-light mb-4">PENTHOUSE SUITE</h3>
-                <div className="text-5xl font-light mb-2">$8,950</div>
-                <p className="text-slate-300 mb-6">per night</p>
-                <Button className="bg-amber-600 hover:bg-amber-700 w-full">
-                  BOOK NOW
-                </Button>
+
+            <Card className="bg-slate-900 text-white p-8 flex bg-[#000e35]/90">
+              <CardContent className="text-center justify-center flex-1 flex flex-col gap-2">
+                <h3 className="text-2xl font-light">PENTHOUSE SUITE</h3>
+                <div className="text-5xl font-light">$8,950</div>
+                <p className="text-slate-300">per night</p>
               </CardContent>
             </Card>
           </div>
@@ -215,7 +206,7 @@ const Index = () => {
                 <p className="text-slate-600">per person</p>
               </CardContent>
             </Card>
-            
+
             <Card className="p-6 text-center">
               <CardContent>
                 <h4 className="text-xl font-light mb-2">SPA PACKAGE</h4>
@@ -223,7 +214,7 @@ const Index = () => {
                 <p className="text-slate-600">per session</p>
               </CardContent>
             </Card>
-            
+
             <Card className="p-6 text-center">
               <CardContent>
                 <h4 className="text-xl font-light mb-2">YACHT CHARTER</h4>
@@ -232,28 +223,28 @@ const Index = () => {
               </CardContent>
             </Card>
           </div>
-        </div>
-      </section>
+        </div >
+      </section >
 
       {/* Contact Section */}
-      <section id="contact" className="py-20 px-6 bg-slate-100">
+      < section id="contact" className="py-20 px-6 bg-slate-100" >
         <div className="max-w-4xl mx-auto text-center">
           <h2 className="text-4xl md:text-5xl font-light text-slate-800 mb-6">
             WATERFRONT SERENITY WITH<br />
             FIVE-STAR SERVICE
           </h2>
           <p className="text-slate-600 leading-relaxed mb-8 text-lg max-w-2xl mx-auto">
-            Discover unparalleled luxury where pristine waters meet world-class hospitality. 
+            Discover unparalleled luxury where pristine waters meet world-class hospitality.
             Our dedicated team ensures every moment of your stay exceeds expectations.
           </p>
           <Button className="bg-slate-900 hover:bg-slate-800 text-white px-8 py-3 text-lg">
             CONTACT US
           </Button>
         </div>
-      </section>
+      </section >
 
       {/* Footer */}
-      <footer className="bg-slate-900 text-white py-12 px-6">
+      < footer className="bg-slate-900 text-white py-12 px-6" >
         <div className="max-w-7xl mx-auto">
           <div className="grid md:grid-cols-4 gap-8 mb-8">
             <div>
@@ -291,8 +282,8 @@ const Index = () => {
             <p>&copy; 2024 Biscayne Shores. All rights reserved.</p>
           </div>
         </div>
-      </footer>
-    </div>
+      </footer >
+    </div >
   );
 };
 
