@@ -253,6 +253,98 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Portfolio Section */}
+      <section className="py-20 px-6 bg-slate-50">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl md:text-5xl font-light text-slate-800 mb-6">
+              PORTFÓLIO
+            </h2>
+          </div>
+          
+          <div className="space-y-8">
+            {/* Fazenda Boa Vista */}
+            <Card className="overflow-hidden hover:shadow-xl transition-all hover:scale-[1.02] duration-300">
+              <div className="relative">
+                <div className="h-80 bg-cover bg-center" style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200')"
+                }} />
+                <div className="absolute top-4 left-4 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
+                  Fazenda Boa Vista - SP - BR
+                </div>
+                <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded backdrop-blur-sm">
+                  Construído em 60 dias - 2000 m²
+                </div>
+              </div>
+            </Card>
+
+            {/* Casa Alphaville */}
+            <Card className="overflow-hidden hover:shadow-xl transition-all hover:scale-[1.02] duration-300">
+              <div className="relative">
+                <div className="h-80 bg-cover bg-center" style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200')"
+                }} />
+                <div className="absolute top-4 left-4 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
+                  Casa Alphaville - SP - BR
+                </div>
+                <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded backdrop-blur-sm">
+                  Construído em 90 dias - 250 m²
+                </div>
+              </div>
+            </Card>
+
+            {/* McDonald's */}
+            <Card className="overflow-hidden hover:shadow-xl transition-all hover:scale-[1.02] duration-300">
+              <div className="relative">
+                <div className="h-80 bg-cover bg-center" style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200')"
+                }} />
+                <div className="absolute top-4 left-4 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
+                  McDonald's - RS - BR
+                </div>
+                <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded backdrop-blur-sm">
+                  Construído em 20 dias - 500 m²
+                </div>
+              </div>
+            </Card>
+
+            {/* Casa de Campo */}
+            <Card className="overflow-hidden hover:shadow-xl transition-all hover:scale-[1.02] duration-300">
+              <div className="relative">
+                <div className="h-80 bg-cover bg-center" style={{
+                  backgroundImage: "url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200')"
+                }} />
+                <div className="absolute top-4 left-4 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
+                  Casa de campo - SP - BR
+                </div>
+                <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded backdrop-blur-sm">
+                  Construído em 60 dias - 300 m²
+                </div>
+              </div>
+            </Card>
+          </div>
+
+          {/* Partner Logos */}
+          <div className="mt-16 flex justify-center items-center space-x-8 opacity-60">
+            <div className="bg-red-600 text-white px-4 py-2 font-bold text-sm rounded">
+              PATENTED
+            </div>
+            <div className="w-12 h-12 bg-green-600 rounded-full flex items-center justify-center">
+              <span className="text-white text-xs font-bold">🌿</span>
+            </div>
+            <div className="text-slate-700 font-bold text-lg">
+              SteelPanel
+            </div>
+            <div className="w-16 h-8 bg-blue-600 rounded flex items-center justify-center">
+              <span className="text-white text-xs font-bold">QUALITY</span>
+            </div>
+            <div className="text-orange-600 font-bold text-lg">
+              QuikHouse
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
       <section id="contato" className="py-20 px-6 bg-slate-100">
         <div className="max-w-4xl mx-auto text-center">
