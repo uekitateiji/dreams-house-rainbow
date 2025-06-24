@@ -15,13 +15,13 @@ const Index = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const heroImages = [
-    "/src/assets/images/hero-image-1.png",
-    "/src/assets/images/hero-image-2.png",
-    "/src/assets/images/hero-image-3.png",
-    "/src/assets/images/hero-image-4.png",
-    "/src/assets/images/hero-image-5.png",
-    "/src/assets/images/hero-image-6.png",
-    "/src/assets/images/7.png"
+    "images/hero-image-1.png",
+    "images/hero-image-2.png",
+    "images/hero-image-3.png",
+    "images/hero-image-4.png",
+    "images/hero-image-5.png",
+    "images/hero-image-6.png",
+    "/7.png"
   ];
 
   useEffect(() => {
@@ -66,9 +66,6 @@ const Index = () => {
           </button>
           <button onClick={() => scrollToSection('portfolio')} className="text-slate-600 hover:text-slate-800 transition-colors">
             Portafolio
-          </button>
-          <button onClick={() => scrollToSection('contato')} className="text-slate-600 hover:text-slate-800 transition-colors">
-            Contacto
           </button>
         </div>
 
@@ -280,7 +277,7 @@ const Index = () => {
         className="w-full h-full"
       >
         <img
-          src="/src/assets/images/hero-image-7.png"
+          src="/images/hero-image-7.png"
           alt="Dreams House Bottom"
           className="w-full h-full object-cover"
         />
@@ -300,7 +297,7 @@ const Index = () => {
           viewport={{ once: true }}
           className="relative h-64 md:h-[650px] order-2 md:order-1 md:col-span-3"
         >
-          <img src="/src/assets/images/image-1.png" alt="Dreams House Construction" className="w-full h-full object-cover shadow-2xl rounded-lg" />
+          <img src="/images/image-1.png" alt="Dreams House Construction" className="w-full h-full object-cover shadow-2xl rounded-lg" />
         </motion.div>
         <div className="order-1 md:order-2 md:col-span-2 px-0 md:px-24">
           <motion.div
@@ -448,7 +445,7 @@ const Index = () => {
         >
 
 
-          <img src="/src/assets/images/image-2.png" alt="SteelPanel System" className="w-full h-full object-cover shadow-2xl rounded-lg" />
+          <img src="/images/image-2.png" alt="SteelPanel System" className="w-full h-full object-cover shadow-2xl rounded-lg" />
 
         </motion.div>
       </div>
@@ -466,7 +463,7 @@ const Index = () => {
           viewport={{ once: true }}
           className="relative h-64 md:h-full order-2 md:order-1"
         >
-          <img src="/src/assets/images/image-3.png" alt="Dreams House Lifestyle" className="w-full h-full object-cover shadow-2xl rounded-lg" />
+          <img src="/images/image-3.png" alt="Dreams House Lifestyle" className="w-full h-full object-cover shadow-2xl rounded-lg" />
         </motion.div>
         <div className="order-1 md:order-2 px-0 md:px-24 overflow-hidden">
           <motion.div
@@ -723,7 +720,7 @@ const Index = () => {
             <Card className="overflow-hidden hover:shadow-xl transition-all hover:scale-[1.02] duration-300">
               <div className="relative">
                 <div className="h-48 md:h-96 bg-cover bg-center" style={{
-                  backgroundImage: "url('/src/assets/images/hero-image-5.png')"
+                  backgroundImage: "url('/images/hero-image-5.png')"
                 }} />
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
@@ -757,7 +754,7 @@ const Index = () => {
             <Card className="overflow-hidden hover:shadow-xl transition-all hover:scale-[1.02] duration-300">
               <div className="relative">
                 <div className="h-48 md:h-96 bg-cover bg-center" style={{
-                  backgroundImage: "url('/src/assets/images/hero-image-2.png')"
+                  backgroundImage: "url('/images/hero-image-2.png')"
                 }} />
                 <motion.div
                   initial={{ opacity: 0, x: -30 }}
@@ -797,7 +794,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="flex items-center justify-center"
           >
-            <img src="/src/assets/logo/selo-verde.png" alt="Selo Verde" className="h-10 md:h-16 w-auto object-contain" />
+            <img src="/logo/selo-verde.png" alt="Selo Verde" className="h-10 md:h-16 w-auto object-contain" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -806,7 +803,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="flex items-center justify-center"
           >
-            <img src="/src/assets/logo/steel-panel.png" alt="SteelPanel Logo" className="h-10 md:h-16 w-auto object-contain" />
+            <img src="/logo/steel-panel.png" alt="SteelPanel Logo" className="h-10 md:h-16 w-auto object-contain" />
           </motion.div>
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}
@@ -815,7 +812,7 @@ const Index = () => {
             viewport={{ once: true }}
             className="flex items-center justify-center"
           >
-            <img src="/src/assets/logo/miami-dade.png" alt="Miami Dade" className="h-10 md:h-16 w-auto object-contain" />
+            <img src="/logo/miami-dade.png" alt="Miami Dade" className="h-10 md:h-16 w-auto object-contain" />
           </motion.div>
         </motion.div>
       </div>
