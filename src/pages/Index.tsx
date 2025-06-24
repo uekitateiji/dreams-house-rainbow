@@ -269,7 +269,7 @@ const Index = () => {
                 <div className="h-80 bg-cover bg-center" style={{
                   backgroundImage: "url('https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200')"
                 }} />
-                <div className="absolute top-4 left-4 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
                   Fazenda Boa Vista - SP - BR
                 </div>
                 <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded backdrop-blur-sm">
@@ -284,7 +284,7 @@ const Index = () => {
                 <div className="h-80 bg-cover bg-center" style={{
                   backgroundImage: "url('https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200')"
                 }} />
-                <div className="absolute top-4 left-4 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
                   Casa Alphaville - SP - BR
                 </div>
                 <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded backdrop-blur-sm">
@@ -299,7 +299,7 @@ const Index = () => {
                 <div className="h-80 bg-cover bg-center" style={{
                   backgroundImage: "url('https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?w=1200')"
                 }} />
-                <div className="absolute top-4 left-4 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
                   McDonald's - RS - BR
                 </div>
                 <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded backdrop-blur-sm">
@@ -314,7 +314,7 @@ const Index = () => {
                 <div className="h-80 bg-cover bg-center" style={{
                   backgroundImage: "url('https://images.unsplash.com/photo-1518780664697-55e3ad937233?w=1200')"
                 }} />
-                <div className="absolute top-4 left-4 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
+                <div className="absolute top-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-slate-700/80 text-white px-4 py-2 rounded-full backdrop-blur-sm">
                   Casa de campo - SP - BR
                 </div>
                 <div className="absolute bottom-4 left-4 bg-slate-900/90 text-white px-4 py-2 rounded backdrop-blur-sm">
