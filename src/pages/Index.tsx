@@ -121,7 +121,7 @@ const Index = () => {
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2 }}
                 onClick={() => scrollToSection('sobre')}
-                className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
+                className="block w-full text-center md:text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
               >
                 Sobre Nosotros
               </motion.button>
@@ -184,7 +184,7 @@ const Index = () => {
     )}
 
     {/* Hero Section */}
-    <section id="hero" className="relative h-screen flex items-center justify-center overflow-hidden px-8 pt-20 bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200">
+    <section id="hero" className="relative h-[95vh] md:h-screen flex items-center justify-center overflow-hidden px-8 pt-20 bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200">
       {/* Background container with padding */}
       <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
         {/* Image carousel */}
@@ -232,7 +232,6 @@ const Index = () => {
         </motion.p>
       </div>
     </section>
-
     {/* Hero Section */}
     <section id="hero" className="relative flex items-center justify-center bg-gradient-to-r from-slate-100 via-blue-50 to-slate-200 h-[200px] md:h-[300px] lg:h-[450px]">
 
@@ -246,7 +245,7 @@ const Index = () => {
         >
           <hr className="border-gray-500 mb-4 w-20 text-center mx-auto border-spacing-0" />
         </motion.div>
-        <h2 className="text-lg md:text-3xl font-light mb-3 md:mb-4 uppercase">
+        <h2 className="text-lg md:text-3xl font-light mb-3 md:mb-4 uppercase font-audrey">
           Por qué elegir a Dreams House
         </h2>
         <motion.p
@@ -254,7 +253,7 @@ const Index = () => {
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
           viewport={{ once: true }}
-          className="text-base md:text-5xl font-light mb-6 md:mb-8 mx-auto leading-relaxed uppercase">
+          className="text-base md:text-5xl font-light mb-6 md:mb-8 mx-auto leading-relaxed uppercase font-audrey">
           Quienes buscan una forma rápida, <br></br>eficiente y sostenible de construir.
         </motion.p>
       </div>
@@ -312,7 +311,7 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-5xl font-light text-slate-800 mb-4 md:mb-6 leading-tight"
+            className="text-2xl text-center md:text-left md:text-5xl font-medium text-slate-800 mb-4 md:mb-6 leading-tight"
           >
             SOBRE NOSOTROS
           </motion.h2>
@@ -405,7 +404,7 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 1, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-5xl font-light text-slate-800 mb-4 md:mb-6 leading-tight"
+            className="text-2xl text-center md:text-left md:text-5xl font-medium text-slate-800 mb-4 md:mb-6 leading-tight"
           >
             NUESTRO SISTEMA
           </motion.h2>

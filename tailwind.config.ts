@@ -19,6 +19,7 @@ export default {
 			}
 		},
 		extend: {
+
 			colors: {
 				border: 'var(--border)',
 				input: 'var(--input)',
