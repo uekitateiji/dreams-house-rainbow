@@ -29,7 +29,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative h-[95vh] md:h-screen flex items-center justify-center overflow-hidden px-8 pt-24 md:pt-28 bg-gradient-to-br bg-slate-200">
       {/* Background container with padding */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden md:p-14 pt-16 md:pt-28">
+      <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden md:p-14 pt-16 md:pt-32">
         {/* Image carousel box */}
         <div className="relative w-full h-full overflow-hidden">
           {heroImages.map((image, index) => (
