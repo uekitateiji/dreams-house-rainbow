@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 import { useTranslation } from 'react-i18next';
 import LanguageSelector from './LanguageSelector';
+import dreamsHouseLogo from '../assets/logo/dreams-house-logo-2.svg';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -89,7 +90,13 @@ const Header = () => {
           <div className="flex flex-col h-full">
             {/* Header do Modal */}
             <div className="flex justify-between items-center p-6 border-b border-slate-200">
-              <h2 className="text-xl font-bold text-slate-800">DREAMS HOUSE</h2>
+              <div className="">
+                <img
+                  src={dreamsHouseLogo}
+                  alt="Dreams House Logo"
+                  className="w-20 h-2w-20 object-contain"
+                />
+              </div>
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 text-slate-600 hover:text-slate-800 transition-colors"

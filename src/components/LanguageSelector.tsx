@@ -14,7 +14,7 @@ interface LanguageSelectorProps {
 }
 
 const languages: Language[] = [
-{ code: 'es-UY', name: 'Español', flag: '🇺🇾', country: 'Uruguay' },
+  { code: 'es-UY', name: 'Español', flag: '🇺🇾', country: 'Uruguay' },
   { code: 'pt-BR', name: 'Português', flag: '🇧🇷', country: 'Brasil' },
   { code: 'en-US', name: 'English', flag: '🇺🇸', country: 'USA' }
 ];
@@ -22,16 +22,16 @@ const languages: Language[] = [
 const LanguageSelector = ({ dropdownDirection = 'down' }: LanguageSelectorProps) => {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
-  
+
   const currentLanguage = languages.find(lang => lang.code === i18n.language) || languages[1];
-  
+
   const handleLanguageChange = (langCode: string) => {
     i18n.changeLanguage(langCode);
     setIsOpen(false);
   };
 
-  const dropdownClasses = dropdownDirection === 'up' 
-    ? "absolute bottom-full mb-1 right-0" 
+  const dropdownClasses = dropdownDirection === 'up'
+    ? "absolute bottom-full mb-1 right-0"
     : "absolute top-full mt-1 right-0";
 
   const animationDirection = dropdownDirection === 'up' ? 10 : -10;
@@ -46,10 +46,10 @@ const LanguageSelector = ({ dropdownDirection = 'down' }: LanguageSelectorProps)
         <span className="text-sm font-medium text-slate-700 hidden md:block">
           {currentLanguage.name}
         </span>
-        <svg 
+        <svg
           className={`w-4 h-4 text-slate-600 transition-transform ${isOpen ? 'rotate-180' : ''}`}
-          fill="none" 
-          stroke="currentColor" 
+          fill="none"
+          stroke="currentColor"
           viewBox="0 0 24 24"
         >
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
@@ -69,9 +69,8 @@ const LanguageSelector = ({ dropdownDirection = 'down' }: LanguageSelectorProps)
               <button
                 key={language.code}
                 onClick={() => handleLanguageChange(language.code)}
-                className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-slate-50 transition-colors first:rounded-t-lg last:rounded-b-lg ${
-                  currentLanguage.code === language.code ? 'bg-slate-100' : ''
-                }`}
+                className={`w-full flex items-center space-x-3 px-4 py-3 text-left hover:bg-slate-50 transition-colors first:rounded-t-lg last:rounded-b-lg ${currentLanguage.code === language.code ? 'bg-slate-100' : ''
+                  }`}
               >
                 <span className="text-lg">{language.flag}</span>
                 <div>

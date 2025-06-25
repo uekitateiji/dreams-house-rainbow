@@ -1,4 +1,5 @@
 import React from 'react';
+import dreamsHouseLogo from '../assets/logo/dreams-house-logo-1.svg';
 import LanguageSelector from './LanguageSelector';
 
 const Footer = () => {
@@ -10,13 +11,13 @@ const Footer = () => {
                         {/* Logo */}
                         <div className="mb-6">
                             <div className="flex flex-col items-center md:items-start">
-                                <div className="w-16 h-16 bg-blue-600 rounded-lg flex items-center justify-center mb-2">
-                                    <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                                        <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5" />
-                                    </svg>
+                                <div className="">
+                                    <img
+                                        src={dreamsHouseLogo}
+                                        alt="Dreams House Logo"
+                                        className="w-36 h-36 object-contain"
+                                    />
                                 </div>
-                                <h3 className="text-lg font-bold text-white">DREAMS HOUSE</h3>
-                                <p className="text-xs text-slate-400 uppercase tracking-wide">SIMPLE BUILDS</p>
                             </div>
                         </div>
 
@@ -28,8 +29,7 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Language Selector */}
-                    <div className="flex items-center">
+                    <div className="flex flex-col items-center md:items-end">
                         <LanguageSelector dropdownDirection="up" />
                     </div>
                 </div>
