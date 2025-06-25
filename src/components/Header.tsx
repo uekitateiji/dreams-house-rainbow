@@ -7,7 +7,11 @@ const Header = () => {
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
-      element.scrollIntoView({
+      const headerHeight = 80; // Altura aproximada do header fixo
+      const elementPosition = element.offsetTop - headerHeight;
+      
+      window.scrollTo({
+        top: elementPosition,
         behavior: 'smooth'
       });
     }
@@ -151,15 +155,6 @@ const Header = () => {
                   className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
                 >
                   Portafolio
-                </motion.button>
-                <motion.button
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ delay: 0.7 }}
-                  onClick={() => { scrollToSection('contato'); setIsMobileMenuOpen(false); }}
-                  className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
-                >
-                  Contacto
                 </motion.button>
               </div>
             </div>
