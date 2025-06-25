@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
-
+import { useIsMobile } from "@/hooks/use-mobile"
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const heroImages = [
@@ -12,7 +12,7 @@ const HeroSection = () => {
     "images/hero-image-6.png",
     "/7.png"
   ];
-
+  const isMobile = useIsMobile();
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) =>
@@ -44,7 +44,7 @@ const HeroSection = () => {
               }}
             />
           ))}
-          
+
           {/* Basic dark overlay */}
           <div className="absolute inset-0 bg-black/70" />
         </div>
@@ -61,15 +61,28 @@ const HeroSection = () => {
           DREAMS HOUSE
         </motion.h1>
 
-        <motion.p
-          initial={{ opacity: 0, scale: 0.9 }}
-          whileInView={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="text-[27px] md:text-2xl font-light md:mb-8 mx-auto tracking-widest font-audrey leading-none"
-        >
-          EMPRESA ESPECIALIZADA EN LA CONSTRUCCIÓN DE CASAS PERSONALIZADAS <br />EN STEELPANEL, CON TECNOLOGÍA DE ÚLTIMA GENERACIÓN.
-        </motion.p>
+
+
+        {isMobile ? (
+          <motion.p
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-[27px] md:text-2xl font-light md:mb-8 mx-auto tracking-widest font-audrey leading-none"
+          >
+            EMPRESA ESPECIALIZADA EN LA CONSTRUCCIÓN DE CASAS PERSONALIZADAS EN STEELPANEL
+          </motion.p>
+        ) :
+          <motion.p
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
+            viewport={{ once: true }}
+            className="text-[27px] md:text-2xl font-light md:mb-8 mx-auto tracking-widest font-audrey leading-none"
+          >
+            EMPRESA ESPECIALIZADA EN LA CONSTRUCCIÓN DE CASAS PERSONALIZADAS <br />EN STEELPANEL, CON TECNOLOGÍA DE ÚLTIMA GENERACIÓN.
+          </motion.p>}
       </div>
     </section>
   );
