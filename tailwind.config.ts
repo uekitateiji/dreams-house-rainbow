@@ -19,7 +19,10 @@ export default {
 			}
 		},
 		extend: {
-
+			fontFamily: {
+				audrey: ['Audrey', 'sans-serif'],
+				lato: ['Lato', 'sans-serif'],
+			},
 			colors: {
 				border: 'var(--border)',
 				input: 'var(--input)',
