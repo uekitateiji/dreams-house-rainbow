@@ -1,8 +1,8 @@
-
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
+import { Leaf, Clock, Settings, TreePine } from "lucide-react";
 import Footer from "@/components/Footer";
 
 // Adiciona CSS global para prevenir overflow horizontal
@@ -477,53 +477,84 @@ const Index = () => {
     </section >
 
     {/* Sustainability Section */}
-    <section id="sustentabilidade" className="py-10 md:py-20 px-4 md:px-6 bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 relative overflow-hidden">
+    <section id="sustentabilidade" className="py-16 md:py-24 px-4 md:px-6 bg-gradient-to-br from-emerald-50 via-teal-50 to-cyan-50 relative overflow-hidden">
+      {/* Background decorative elements */}
+      <div className="absolute inset-0 overflow-hidden">
+        <div className="absolute top-20 left-10 w-32 h-32 bg-emerald-200/30 rounded-full blur-2xl"></div>
+        <div className="absolute bottom-20 right-10 w-40 h-40 bg-teal-200/30 rounded-full blur-2xl"></div>
+        <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-cyan-200/20 rounded-full blur-3xl"></div>
+      </div>
 
-
-      <div className="max-w-full mx-auto relative z-10 px-2">
-        <div className="text-center mb-8 md:mb-14 pt-8">
+      <div className="max-w-7xl mx-auto relative z-10 px-2">
+        <div className="text-center mb-12 md:mb-20">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ duration: 0.6, delay: 0.1 }}
+            viewport={{ once: true }}
+            className="inline-flex items-center justify-center w-16 h-16 bg-emerald-600 rounded-full mb-6"
+          >
+            <TreePine className="w-8 h-8 text-white" />
+          </motion.div>
+          
           <motion.h2
-            initial={{ opacity: 0, y: 10 }}
+            initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-2xl md:text-5xl font-light text-slate-800 uppercase tracking-wider font-audrey"
+            className="text-3xl md:text-6xl font-light text-slate-800 uppercase tracking-wider font-audrey mb-6"
           >
             SOSTENIBILIDAD
           </motion.h2>
+          
+          <motion.div
+            initial={{ opacity: 0, scaleX: 0 }}
+            whileInView={{ opacity: 1, scaleX: 1 }}
+            transition={{ duration: 0.8, delay: 0.3 }}
+            viewport={{ once: true }}
+            className="w-24 h-1 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-8"
+          ></motion.div>
+          
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-slate-600 text-xs md:text-base max-w-4xl mx-auto uppercase tracking-wide break-words px-2 md:px-0 font-lato"
+            className="text-slate-600 text-base md:text-lg max-w-4xl mx-auto leading-relaxed px-4 md:px-0 font-lato"
           >
-            EL SISTEMA QUICK HOUSE ES UNA FORMA INDUSTRIALIZADA Y PRODUCTIVA QUE ELIMINA EL USO<br />
-            DE CEMENTO Y MORTERO EN SU COMPOSICIÓN, REDUCIENDO EL CONSUMO DE ENERGÍA.
+            El sistema QuikHouse es una forma industrializada y productiva que elimina el uso<br className="hidden md:block" />
+            de cemento y mortero en su composición, reduciendo significativamente el consumo de energía<br className="hidden md:block" />
+            y promoviendo la construcción sostenible del futuro.
           </motion.p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+        <div className="grid md:grid-cols-3 gap-8 md:gap-10">
           {/* Costo Competitivo */}
           <motion.div
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
-            className="text-center"
           >
-            <div className="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z" />
-              </svg>
-            </div>
-            <h3 className="text-lg md:text-xl font-medium text-slate-800 mb-4 uppercase font-audrey">COSTO COMPETITIVO</h3>
-            <p className="text-slate-600 text-xs md:text-sm leading-relaxed uppercase font-lato font-light">
-              QUICK HOUSE CONSTRUYE<br />
-              ECONOMIZANDO UNA MÁXIMA<br />
-              ECONOMÍA EN LA LÍNEA<br />
-              CON PRÁCTICAS SOSTENIBLES
-            </p>
+            <Card className="relative overflow-hidden bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
+              <CardContent className="p-8 text-center">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-emerald-500 to-teal-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <svg className="w-10 h-10 text-white" fill="currentColor" viewBox="0 0 24 24">
+                      <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1.41 16.09V20h-2.67v-1.93c-1.71-.36-3.16-1.46-3.27-3.4h1.96c.1 1.05.82 1.87 2.65 1.87 1.96 0 2.4-.98 2.4-1.59 0-.83-.44-1.61-2.67-2.14-2.48-.6-4.18-1.62-4.18-3.67 0-1.72 1.39-2.84 3.11-3.21V4h2.67v1.95c1.86.45 2.79 1.86 2.85 3.39H14.3c-.05-1.11-.64-1.87-2.22-1.87-1.5 0-2.4.68-2.4 1.64 0 .84.65 1.39 2.67 1.91s4.18 1.39 4.18 3.91c-.01 1.83-1.38 2.83-3.12 3.16z" />
+                    </svg>
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-emerald-500 rounded-full opacity-20 group-hover:scale-150 transition-transform duration-500"></div>
+                </div>
+                
+                <h3 className="text-xl md:text-2xl font-semibold text-slate-800 mb-4 font-audrey">COSTO COMPETITIVO</h3>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-emerald-500 to-teal-500 mx-auto mb-4"></div>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed font-lato">
+                  QuikHouse construye con máxima economía en línea con prácticas sostenibles, 
+                  ofreciendo soluciones eficientes y rentables para cada proyecto.
+                </p>
+              </CardContent>
+            </Card>
           </motion.div>
 
           {/* Menor Tiempo */}
@@ -532,21 +563,24 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             viewport={{ once: true }}
-            className="text-center"
           >
-            <div className="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M16.2,16.2L11,13V7H12.5V12.2L17,14.9L16.2,16.2Z" />
-              </svg>
-            </div>
-            <h3 className="text-lg md:text-xl font-semibold text-slate-800 mb-4 uppercase font-audrey">MENOR TIEMPO DE EJECUCIÓN</h3>
-            <p className="text-slate-600 text-xs md:text-sm leading-relaxed uppercase font-lato font-light">
-              EL SISTEMA QUICK HOUSE ES UN<br />
-              MODELO SIMPLIFICADO QUE HACE<br />
-              QUE TODO EL PROCESO DE<br />
-              CONSTRUCCIÓN SEA MÁS RÁPIDO Y<br />
-              CON UN RESULTADO FINAL MÁS ALTO.
-            </p>
+            <Card className="relative overflow-hidden bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
+              <CardContent className="p-8 text-center">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-teal-500 to-cyan-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Clock className="w-10 h-10 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-teal-500 rounded-full opacity-20 group-hover:scale-150 transition-transform duration-500"></div>
+                </div>
+                
+                <h3 className="text-xl md:text-2xl font-semibold text-slate-800 mb-4 font-audrey">MENOR TIEMPO DE EJECUCIÓN</h3>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-teal-500 to-cyan-500 mx-auto mb-4"></div>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed font-lato">
+                  El sistema QuikHouse es un modelo simplificado que acelera todo el proceso de 
+                  construcción con resultados superiores y mayor eficiencia.
+                </p>
+              </CardContent>
+            </Card>
           </motion.div>
 
           {/* Organización */}
@@ -555,23 +589,57 @@ const Index = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.6 }}
             viewport={{ once: true }}
-            className="text-center"
           >
-            <div className="w-16 h-16 bg-slate-800 rounded-full flex items-center justify-center mx-auto mb-6">
-              <svg className="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 24 24">
-                <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.22,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.22,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.68 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z" />
-              </svg>
-            </div>
-            <h3 className="text-lg md:text-xl font-semibold text-slate-800 mb-4 uppercase font-audrey">ORGANIZACIÓN DEL SITIO DE<br />CONSTRUCCIÓN</h3>
-            <p className="text-slate-600 text-xs md:text-sm leading-relaxed uppercase font-lato font-light">
-              DEBIDO A QUE EL ENSAMBLAJE ES<br />
-              COMPLETAMENTE INTELIGIBLE, ESTA<br />
-              ADICIONAL ELIMINA LOS COSTOS<br />
-              ADICIONALES CON LA DE OBRA Y<br />
-              EVITA EL DESPERDÍCIO DE MATERIALES
-            </p>
+            <Card className="relative overflow-hidden bg-white/80 backdrop-blur-sm border-0 shadow-xl hover:shadow-2xl transition-all duration-300 hover:scale-105 group">
+              <CardContent className="p-8 text-center">
+                <div className="relative">
+                  <div className="w-20 h-20 bg-gradient-to-br from-cyan-500 to-blue-600 rounded-2xl flex items-center justify-center mx-auto mb-6 group-hover:scale-110 transition-transform duration-300">
+                    <Settings className="w-10 h-10 text-white" />
+                  </div>
+                  <div className="absolute -top-2 -right-2 w-6 h-6 bg-cyan-500 rounded-full opacity-20 group-hover:scale-150 transition-transform duration-500"></div>
+                </div>
+                
+                <h3 className="text-xl md:text-2xl font-semibold text-slate-800 mb-4 font-audrey">ORGANIZACIÓN DEL SITIO</h3>
+                <div className="w-12 h-0.5 bg-gradient-to-r from-cyan-500 to-blue-500 mx-auto mb-4"></div>
+                <p className="text-slate-600 text-sm md:text-base leading-relaxed font-lato">
+                  El ensamblaje inteligente elimina costos adicionales de mano de obra y 
+                  evita el desperdicio de materiales, optimizando cada recurso.
+                </p>
+              </CardContent>
+            </Card>
           </motion.div>
         </div>
+
+        {/* Environmental Impact Stats */}
+        <motion.div
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8, delay: 0.8 }}
+          viewport={{ once: true }}
+          className="mt-16 md:mt-20"
+        >
+          <div className="bg-white/60 backdrop-blur-sm rounded-3xl p-8 md:p-12 shadow-2xl border border-white/20">
+            <div className="text-center mb-8">
+              <Leaf className="w-12 h-12 text-emerald-600 mx-auto mb-4" />
+              <h3 className="text-2xl md:text-3xl font-light text-slate-800 font-audrey">IMPACTO AMBIENTAL</h3>
+            </div>
+            
+            <div className="grid md:grid-cols-3 gap-8 text-center">
+              <div className="space-y-2">
+                <div className="text-3xl md:text-4xl font-bold text-emerald-600 font-audrey">-70%</div>
+                <div className="text-slate-600 font-lato">Reducción de residuos</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl md:text-4xl font-bold text-teal-600 font-audrey">-50%</div>
+                <div className="text-slate-600 font-lato">Menor consumo energético</div>
+              </div>
+              <div className="space-y-2">
+                <div className="text-3xl md:text-4xl font-bold text-cyan-600 font-audrey">100%</div>
+                <div className="text-slate-600 font-lato">Materiales reciclables</div>
+              </div>
+            </div>
+          </div>
+        </motion.div>
       </div>
     </section>
 
