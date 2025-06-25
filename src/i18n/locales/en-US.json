@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Home",
+    "why_choose": "Why Choose",
+    "about": "About Us",
+    "system": "System",
+    "lifestyle": "Lifestyle",
+    "sustainability": "Sustainability",
+    "portfolio": "Portfolio"
+  },
+  "hero": {
+    "title": "DREAMS HOUSE",
+    "description_mobile": "COMPANY SPECIALIZED IN CONSTRUCTION OF CUSTOMIZED STEELPANEL HOUSES",
+    "description": "COMPANY SPECIALIZED IN CONSTRUCTION OF CUSTOMIZED<br/>STEELPANEL HOUSES, WITH LATEST GENERATION TECHNOLOGY."
+  },
+  "why_choose": {
+    "section_title": "Why choose Dreams House",
+    "title": "Those who seek a fast,<br/>efficient and sustainable way to build."
+  },
+  "about": {
+    "title": "ABOUT US",
+    "description": "QuikHouse is the factory responsible for the development and production of the SteelPanel construction system, an industrialized technology that offers agility, resistance and precision in civil construction. To bring your projects to reality with excellence, QuikHouse has the strategic alliance of Dreams House, a company specialized in the execution of residential and commercial works. Together, they offer a complete solution: from the manufacturing of panels to the final assembly on site."
+  },
+  "system": {
+    "title": "STEELPANEL SYSTEM",
+    "description": "SteelPanel is an exclusive construction system from QuikHouse. It consists of self-supporting metallic panels made of galvanized steel that fulfill structural and divisory functions. Being prefabricated, they guarantee speed in installation, high resistance, durability and flexibility to apply various finishes. It is an ideal solution for buildings up to two stories, both residential and commercial, with the quality guarantee of an industrialized system."
+  },
+  "lifestyle": {
+    "title": "WE DON'T BUILD HOUSES, WE TRANSFORM YOUR LIFESTYLE",
+    "description": "Choosing to build with the SteelPanel system is opting for a superior experience from day one. We offer efficiency in deadlines, high-quality finishes and total flexibility in designs. Each project adapts to your dreams, needs and lifestyle, with personalized solutions and attention to every detail. Our systems allow for clean, fast and precise installation, ideal for those who value innovation, comfort and durability in their investment. More than building structures, we create unique spaces that reflect who you are and how you want to live."
+  },
+  "sustainability": {
+    "title": "SUSTAINABILITY",
+    "subtitle": "The QuikHouse system is an industrialized and productive way that eliminates the use of cement and mortar in its composition, significantly reducing energy consumption and promoting sustainable construction of the future.",
+    "cost_competitive": {
+      "title": "COMPETITIVE COST",
+      "description": "QuikHouse builds with maximum economy aligned with sustainable practices, offering efficient and profitable solutions for each project."
+    },
+    "execution_time": {
+      "title": "SHORTER EXECUTION TIME",
+      "description": "The QuikHouse system is a simplified model that makes the entire construction process faster and with superior final results."
+    },
+    "organization": {
+      "title": "EFFICIENT ORGANIZATION",
+      "description": "The completely intelligible assembly eliminates additional labor costs and avoids material waste on site."
+    }
+  },
+  "portfolio": {
+    "title": "PORTFOLIO",
+    "projects": {
+      "fazenda": "Fazenda Boa Vista - SP - BR",
+      "alphaville": "Casa Alphaville - SP - BR",
+      "mcdonalds": "McDonald's - RS - BR",
+      "campo": "Casa de campo - SP - BR"
+    },
+    "descriptions": {
+      "fazenda": "Built in 60 days - 2,000 m²",
+      "alphaville": "Built in 90 days - 250 m²",
+      "mcdonalds": "Built in 20 days - 500 m²",
+      "campo": "Built in 60 days - 300 m²"
+    }
+  },
+  "common": {
+    "built_in_days": "Built in {{days}} days",
+    "area": "{{area}} m²",
+    "company_footer": "Company specialized in SteelPanel construction"
+  }
+} 

@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 const WhyChooseSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <>
       {/* Por qué elegir a Dreams House Section */}
@@ -15,7 +18,7 @@ const WhyChooseSection = () => {
             <hr className="border-gray-500 mb-4 w-20 text-center mx-auto border-spacing-0" />
           </motion.div>
           <h2 className="text-lg md:text-[15px] font-light mb-3 md:mb-4 uppercase font-lato">
-            Por qué elegir a Dreams House
+            {t('why_choose.section_title')}
           </h2>
           <motion.p
             initial={{ opacity: 0, y: 50 }}
@@ -23,9 +26,8 @@ const WhyChooseSection = () => {
             transition={{ duration: 1 }}
             viewport={{ once: true }}
             className="text-base md:text-[37px] leading-tight font-light mb-6 md:mb-8 mx-auto uppercase font-audrey"
-          >
-            Quienes buscan una forma rápida, <br />eficiente y sostenible de construir.
-          </motion.p>
+            dangerouslySetInnerHTML={{ __html: t('why_choose.title') }}
+          />
         </div>
       </section>
 

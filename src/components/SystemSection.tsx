@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 const SystemSection = () => {
+  const { t } = useTranslation();
+  
   return (
-    <section id="sistema" className="py-10 md:py-20 px-4 md:px-12 overflow-hidden">
+    <section id="sistema" className="py-10 md:py-20 px-4 md:px-12 bg-white overflow-hidden">
       <div className="max-w-full mx-auto grid md:grid-cols-2 gap-6 md:gap-12 items-center">
         <div className="px-0">
           <motion.div
@@ -15,37 +18,22 @@ const SystemSection = () => {
           <motion.h2
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 1, delay: 0.2 }}
+            transition={{ duration: 0.8, delay: 0.2 }}
             viewport={{ once: true }}
             className="text-2xl text-center md:text-left md:text-5xl font-medium text-slate-800 mb-4 md:mb-6 leading-tight font-audrey"
           >
-            NUESTRO SISTEMA
+            {t('system.title')}
           </motion.h2>
-          <div className="text-slate-600 leading-relaxed mb-6 md:mb-8 text-base md:text-lg break-words overflow-hidden font-lato text-center md:text-left">
-            {[
-              "SteelPanel", "es", "un", "sistema", "constructivo", "exclusivo", "de", "QuikHouse.", "Está", "compuesto", "por", "paneles", "metálicos", "autoportantes", "de", "acero",
-              "galvanizado", "que", "cumplen", "funciones", "estructurales", "y", "divisorias.", "Al", "ser", "prefabricados,", "garantizan", "rapidez", "en", "la", "instalación,",
-              "alta", "resistencia,", "durabilidad", "y", "flexibilidad", "para", "aplicar", "diversos", "acabados.", "Es", "una", "solución", "ideal", "para", "edificaciones", "de",
-              "hasta", "dos", "plantas,", "tanto", "residenciales", "como", "comerciales,", "con", "la", "garantía", "de", "calidad", "de", "un", "sistema", "industrializado."
-            ].map((word, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  type: "spring",
-                  duration: 0.8,
-                  bounce: 0,
-                  delay: 0.5 + (index * 0.03)
-                }}
-                viewport={{ once: true }}
-                className="inline-block mr-1 break-words"
-                style={{ willChange: "transform, opacity" }}
-              >
-                {word}
-              </motion.span>
-            ))}
-          </div>
+          
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="text-slate-600 leading-relaxed mb-6 md:mb-8 text-base md:text-lg break-words overflow-hidden font-lato text-center md:text-left"
+          >
+            {t('system.description')}
+          </motion.div>
         </div>
 
         <motion.div

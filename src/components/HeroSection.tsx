@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useIsMobile } from "@/hooks/use-mobile"
+import { useTranslation } from 'react-i18next';
+
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const { t } = useTranslation();
   const heroImages = [
     "images/hero-image-1.png",
     "images/hero-image-2.png",
@@ -58,10 +61,8 @@ const HeroSection = () => {
           viewport={{ once: true }}
           className="text-2xl md:text-6xl font-bold tracking-wider mb-6"
         >
-          DREAMS HOUSE
+          {t('hero.title')}
         </motion.h1>
-
-
 
         {isMobile ? (
           <motion.p
@@ -70,19 +71,18 @@ const HeroSection = () => {
             transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
             className="text-[27px] md:text-2xl font-light md:mb-8 mx-auto tracking-widest font-audrey leading-none"
-          >
-            EMPRESA ESPECIALIZADA EN LA CONSTRUCCIÓN DE CASAS PERSONALIZADAS EN STEELPANEL
-          </motion.p>
-        ) :
+            dangerouslySetInnerHTML={{ __html: t('hero.description_mobile') }}
+          />
+        ) : (
           <motion.p
             initial={{ opacity: 0, scale: 0.9 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
             className="text-[27px] md:text-2xl font-light md:mb-8 mx-auto tracking-widest font-audrey leading-none"
-          >
-            EMPRESA ESPECIALIZADA EN LA CONSTRUCCIÓN DE CASAS PERSONALIZADAS <br />EN STEELPANEL, CON TECNOLOGÍA DE ÚLTIMA GENERACIÓN.
-          </motion.p>}
+            dangerouslySetInnerHTML={{ __html: t('hero.description') }}
+          />
+        )}
       </div>
     </section>
   );

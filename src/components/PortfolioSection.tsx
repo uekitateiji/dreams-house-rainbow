@@ -1,33 +1,36 @@
 import { Card } from "@/components/ui/card";
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 const PortfolioSection = () => {
+  const { t } = useTranslation();
+  
   const portfolioProjects = [
     {
       id: "fazenda-boa-vista",
-      title: "Fazenda Boa Vista - SP - BR",
-      description: "Construido en 60 días - 2000 m²",
+      title: t('portfolio.projects.fazenda'),
+      description: t('portfolio.descriptions.fazenda'),
       image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200",
       delay: 0.1
     },
     {
       id: "casa-alphaville",
-      title: "Casa Alphaville - SP - BR",
-      description: "Construido en 90 días - 250 m²",
+      title: t('portfolio.projects.alphaville'),
+      description: t('portfolio.descriptions.alphaville'),
       image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200",
       delay: 0.2
     },
     {
       id: "mcdonalds",
-      title: "McDonald's - RS - BR",
-      description: "Construido en 20 días - 500 m²",
+      title: t('portfolio.projects.mcdonalds'),
+      description: t('portfolio.descriptions.mcdonalds'),
       image: "/images/hero-image-5.png",
       delay: 0.3
     },
     {
       id: "casa-campo",
-      title: "Casa de campo - SP - BR",
-      description: "Construido en 60 días - 300 m²",
+      title: t('portfolio.projects.campo'),
+      description: t('portfolio.descriptions.campo'),
       image: "/images/hero-image-2.png",
       delay: 0.4
     }
@@ -62,7 +65,7 @@ const PortfolioSection = () => {
             viewport={{ once: true }}
             className="text-2xl md:text-5xl font-light text-slate-800 mb-4 md:mb-6 font-audrey"
           >
-            PORTAFOLIO
+            {t('portfolio.title')}
           </motion.h2>
 
           <motion.div
@@ -75,7 +78,7 @@ const PortfolioSection = () => {
           </motion.div>
         </div>
 
-        <div className="space-y-8 md:space-y-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12">
           {portfolioProjects.map((project) => (
             <motion.div
               key={project.id}
@@ -87,7 +90,7 @@ const PortfolioSection = () => {
               <Card className="overflow-hidden hover:shadow-xl transition-all hover:scale-[1.02] duration-300">
                 <div className="relative">
                   <div
-                    className="h-48 md:h-96 bg-cover bg-center"
+                    className="h-56 md:h-80 bg-cover bg-center"
                     style={{ backgroundImage: `url('${project.image}')` }}
                   />
                   <motion.div

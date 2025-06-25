@@ -1,4 +1,5 @@
 import React from 'react';
+import LanguageSelector from './LanguageSelector';
 
 const Footer = () => {
     return (
@@ -27,17 +28,9 @@ const Footer = () => {
                         </div>
                     </div>
 
-                    {/* Flags */}
-                    <div className="flex space-x-4">
-                        <div className="w-8 h-6 bg-green-500 rounded flex items-center justify-center">
-                            <span className="text-xs">🇧🇷</span>
-                        </div>
-                        <div className="w-8 h-6 bg-blue-400 rounded flex items-center justify-center">
-                            <span className="text-xs">🇺🇾</span>
-                        </div>
-                        <div className="w-8 h-6 bg-red-500 rounded flex items-center justify-center">
-                            <span className="text-xs">🇺🇸</span>
-                        </div>
+                    {/* Language Selector */}
+                    <div className="flex items-center">
+                        <LanguageSelector dropdownDirection="up" />
                     </div>
                 </div>
             </div>

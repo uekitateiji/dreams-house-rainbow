@@ -1,6 +1,9 @@
 import { motion } from "framer-motion";
+import { useTranslation } from 'react-i18next';
 
 const LifestyleSection = () => {
+  const { t } = useTranslation();
+  
   return (
     <section id="estilo" className="py-10 md:py-20 px-4 md:px-12 bg-slate-50 overflow-hidden">
       <div className="max-w-full mx-auto grid md:grid-cols-2 gap-6 md:gap-12 items-center">
@@ -28,35 +31,17 @@ const LifestyleSection = () => {
             viewport={{ once: true }}
             className="text-lg md:text-5xl font-light text-slate-800 mb-4 md:mb-6 leading-tight break-words font-audrey text-center md:text-left"
           >
-            NO CONSTRUIMOS CASAS, TRANSFORMAMOS TU ESTILO DE VIDA
+            {t('lifestyle.title')}
           </motion.h2>
-          <div className="text-slate-600 leading-relaxed mb-6 md:mb-8 text-sm md:text-lg break-words overflow-hidden font-lato text-center md:text-left">
-            {[
-              "Elegir", "construir", "con", "el", "sistema", "SteelPanel", "es", "optar", "por", "una", "experiencia", "superior", "desde", "el", "primer", "día.",
-              "Ofrecemos", "eficiencia", "en", "los", "plazos,", "acabados", "de", "alta", "calidad", "y", "flexibilidad", "total", "en", "los", "diseños.",
-              "Cada", "proyecto", "se", "adapta", "a", "tus", "sueños,", "necesidades", "y", "estilo", "de", "vida,", "con", "soluciones", "personalizadas", "y",
-              "atención", "a", "cada", "detalle.", "Nuestros", "sistemas", "permiten", "una", "instalación", "limpia,", "rápida", "y", "precisa,", "ideal", "para", "quienes",
-              "valoran", "innovación,", "confort", "y", "durabilidad", "en", "su", "inversión.", "Más", "que", "construir", "estructuras,", "creamos", "espacios", "únicos", "que",
-              "reflejan", "quién", "eres", "y", "cómo", "quieres", "vivir."
-            ].map((word, index) => (
-              <motion.span
-                key={index}
-                initial={{ opacity: 0, y: 10 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{
-                  type: "spring",
-                  duration: 0.8,
-                  bounce: 0,
-                  delay: 0.5 + (index * 0.03)
-                }}
-                viewport={{ once: true }}
-                className="inline-block mr-1 break-words"
-                style={{ willChange: "transform, opacity" }}
-              >
-                {word}
-              </motion.span>
-            ))}
-          </div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.5 }}
+            viewport={{ once: true }}
+            className="text-slate-600 leading-relaxed mb-6 md:mb-8 text-sm md:text-lg break-words overflow-hidden font-lato text-center md:text-left"
+          >
+            {t('lifestyle.description')}
+          </motion.div>
         </div>
       </div>
     </section>

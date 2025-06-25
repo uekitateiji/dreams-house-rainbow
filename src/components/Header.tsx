@@ -1,15 +1,18 @@
 import { motion } from "framer-motion";
 import { useState } from "react";
+import { useTranslation } from 'react-i18next';
+import LanguageSelector from './LanguageSelector';
 
 const Header = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const { t } = useTranslation();
 
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
       const headerHeight = 80; // Altura aproximada do header fixo
       const elementPosition = element.offsetTop - headerHeight;
-      
+
       window.scrollTo({
         top: elementPosition,
         behavior: 'smooth'
@@ -23,36 +26,43 @@ const Header = () => {
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 py-4 px-4 md:px-6">
         <div className="max-w-7xl mx-auto flex justify-end items-center">
 
+
+
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
             <button onClick={() => scrollToSection('hero')} className="text-slate-600 hover:text-slate-800 transition-colors relative group py-2 font-lato font-light">
-              Inicio
+              {t('nav.home')}
               <div className="absolute bottom-0 right-0 w-0 h-[1.5px] bg-slate-800 transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button onClick={() => scrollToSection('elegir')} className="text-slate-600 hover:text-slate-800 transition-colors relative group py-2 font-lato font-light">
-              Por qué elegir
+              {t('nav.why_choose')}
               <div className="absolute bottom-0 right-0 w-0 h-[1.5px] bg-slate-800 transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button onClick={() => scrollToSection('sobre')} className="text-slate-600 hover:text-slate-800 transition-colors relative group py-2 font-lato font-light">
-              Sobre Nosotros
+              {t('nav.about')}
               <div className="absolute bottom-0 right-0 w-0 h-[1.5px] bg-slate-800 transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button onClick={() => scrollToSection('sistema')} className="text-slate-600 hover:text-slate-800 transition-colors relative group py-2 font-lato font-light">
-              Sistema
+              {t('nav.system')}
               <div className="absolute bottom-0 right-0 w-0 h-[1.5px] bg-slate-800 transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button onClick={() => scrollToSection('estilo')} className="text-slate-600 hover:text-slate-800 transition-colors relative group py-2 font-lato font-light">
-              Estilo de Vida
+              {t('nav.lifestyle')}
               <div className="absolute bottom-0 right-0 w-0 h-[1.5px] bg-slate-800 transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button onClick={() => scrollToSection('sustentabilidade')} className="text-slate-600 hover:text-slate-800 transition-colors relative group py-2 font-lato font-light">
-              Sostenibilidad
+              {t('nav.sustainability')}
               <div className="absolute bottom-0 right-0 w-0 h-[1.5px] bg-slate-800 transition-all duration-300 group-hover:w-full"></div>
             </button>
             <button onClick={() => scrollToSection('portfolio')} className="text-slate-600 hover:text-slate-800 transition-colors relative group py-2 font-lato font-light">
-              Portafolio
+              {t('nav.portfolio')}
               <div className="absolute bottom-0 right-0 w-0 h-[1.5px] bg-slate-800 transition-all duration-300 group-hover:w-full"></div>
             </button>
+
+            {/* Language Selector */}
+            <div className="mr-4">
+              <LanguageSelector />
+            </div>
           </div>
 
           {/* Mobile Menu Button */}
@@ -100,7 +110,7 @@ const Header = () => {
                   onClick={() => { scrollToSection('hero'); setIsMobileMenuOpen(false); }}
                   className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
                 >
-                  Inicio
+                  {t('nav.home')}
                 </motion.button>
                 <motion.button
                   initial={{ opacity: 0, x: -20 }}
@@ -109,7 +119,7 @@ const Header = () => {
                   onClick={() => { scrollToSection('elegir'); setIsMobileMenuOpen(false); }}
                   className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
                 >
-                  Por qué elegir
+                  {t('nav.why_choose')}
                 </motion.button>
                 <motion.button
                   initial={{ opacity: 0, x: -20 }}
@@ -118,7 +128,7 @@ const Header = () => {
                   onClick={() => { scrollToSection('sobre'); setIsMobileMenuOpen(false); }}
                   className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
                 >
-                  Sobre Nosotros
+                  {t('nav.about')}
                 </motion.button>
                 <motion.button
                   initial={{ opacity: 0, x: -20 }}
@@ -127,7 +137,7 @@ const Header = () => {
                   onClick={() => { scrollToSection('sistema'); setIsMobileMenuOpen(false); }}
                   className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
                 >
-                  Sistema
+                  {t('nav.system')}
                 </motion.button>
                 <motion.button
                   initial={{ opacity: 0, x: -20 }}
@@ -136,7 +146,7 @@ const Header = () => {
                   onClick={() => { scrollToSection('estilo'); setIsMobileMenuOpen(false); }}
                   className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
                 >
-                  Estilo de Vida
+                  {t('nav.lifestyle')}
                 </motion.button>
                 <motion.button
                   initial={{ opacity: 0, x: -20 }}
@@ -145,7 +155,7 @@ const Header = () => {
                   onClick={() => { scrollToSection('sustentabilidade'); setIsMobileMenuOpen(false); }}
                   className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
                 >
-                  Sostenibilidad
+                  {t('nav.sustainability')}
                 </motion.button>
                 <motion.button
                   initial={{ opacity: 0, x: -20 }}
@@ -154,7 +164,7 @@ const Header = () => {
                   onClick={() => { scrollToSection('portfolio'); setIsMobileMenuOpen(false); }}
                   className="block w-full text-left text-2xl font-light text-slate-800 hover:text-slate-600 transition-colors py-3 border-b border-slate-100"
                 >
-                  Portafolio
+                  {t('nav.portfolio')}
                 </motion.button>
               </div>
             </div>
@@ -162,7 +172,7 @@ const Header = () => {
             {/* Footer do Modal */}
             <div className="p-6 border-t border-slate-200">
               <p className="text-center text-sm text-slate-500">
-                Empresa especializada en construcción con SteelPanel
+                {t('common.company_footer')}
               </p>
             </div>
           </div>

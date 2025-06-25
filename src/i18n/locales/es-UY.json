@@ -1,0 +1,68 @@
+{
+  "nav": {
+    "home": "Inicio",
+    "why_choose": "Por qué elegir",
+    "about": "Sobre Nosotros",
+    "system": "Sistema",
+    "lifestyle": "Estilo de Vida",
+    "sustainability": "Sustentabilidad",
+    "portfolio": "Portafolio"
+  },
+  "hero": {
+    "title": "DREAMS HOUSE",
+    "description_mobile": "EMPRESA ESPECIALIZADA EN LA CONSTRUCCIÓN DE CASAS PERSONALIZADAS EN STEELPANEL",
+    "description": "EMPRESA ESPECIALIZADA EN LA CONSTRUCCIÓN DE CASAS PERSONALIZADAS<br/>EN STEELPANEL, CON TECNOLOGÍA DE ÚLTIMA GENERACIÓN."
+  },
+  "why_choose": {
+    "section_title": "Por qué elegir a Dreams House",
+    "title": "Quienes buscan una forma rápida,<br/>eficiente y sustentable de construir."
+  },
+  "about": {
+    "title": "SOBRE NOSOTROS",
+    "description": "QuikHouse es la fábrica responsable por el desarrollo y la producción del sistema constructivo SteelPanel, una tecnología industrializada que ofrece agilidad, resistencia y precisión en la construcción civil. Para llevar sus proyectos a la realidad con excelencia, QuikHouse cuenta con la alianza estratégica de Dreams House, empresa especializada en la ejecución de obras residenciales y comerciales. Juntas, ofrecen una solución completa: desde la fabricación de los paneles hasta el montaje final en el terreno."
+  },
+  "system": {
+    "title": "SISTEMA STEELPANEL",
+    "description": "SteelPanel es un sistema constructivo exclusivo de QuikHouse. Está compuesto por paneles metálicos autoportantes de acero galvanizado que cumplen funciones estructurales y divisorias. Al ser prefabricados, garantizan rapidez en la instalación, alta resistencia, durabilidad y flexibilidad para aplicar diversos acabados. Es una solución ideal para edificaciones de hasta dos plantas, tanto residenciales como comerciales, con la garantía de calidad de un sistema industrializado."
+  },
+  "lifestyle": {
+    "title": "NO CONSTRUIMOS CASAS, TRANSFORMAMOS TU ESTILO DE VIDA",
+    "description": "Elegir construir con el sistema SteelPanel es optar por una experiencia superior desde el primer día. Ofrecemos eficiencia en los plazos, acabados de alta calidad y flexibilidad total en los diseños. Cada proyecto se adapta a tus sueños, necesidades y estilo de vida, con soluciones personalizadas y atención a cada detalle. Nuestros sistemas permiten una instalación limpia, rápida y precisa, ideal para quienes valoran innovación, confort y durabilidad en su inversión. Más que construir estructuras, creamos espacios únicos que reflejan quién sos y cómo querés vivir."
+  },
+  "sustainability": {
+    "title": "SUSTENTABILIDAD",
+    "subtitle": "El sistema QuikHouse es una forma industrializada y productiva que elimina el uso de cemento y argamasa en su composición, reduciendo significativamente el consumo de energía y promoviendo la construcción sustentable del futuro.",
+    "cost_competitive": {
+      "title": "COSTO COMPETITIVO",
+      "description": "QuikHouse construye con máxima economía alineada a las prácticas sustentables, ofreciendo soluciones eficientes y rentables para cada proyecto."
+    },
+    "execution_time": {
+      "title": "MENOR TIEMPO DE EJECUCIÓN", 
+      "description": "El sistema QuikHouse es un modelo simplificado que hace todo el proceso de construcción más rápido y con resultado final superior."
+    },
+    "organization": {
+      "title": "ORGANIZACIÓN EFICIENTE",
+      "description": "El montaje completamente inteligible elimina costos adicionales de mano de obra y evita el desperdicio de materiales en la obra."
+    }
+  },
+  "portfolio": {
+    "title": "PORTAFOLIO",
+    "projects": {
+      "fazenda": "Fazenda Boa Vista - SP - BR",
+      "alphaville": "Casa Alphaville - SP - BR",
+      "mcdonalds": "McDonald's - RS - BR",
+      "campo": "Casa de campo - SP - BR"
+    },
+    "descriptions": {
+      "fazenda": "Construido en 60 días - 2.000 m²",
+      "alphaville": "Construido en 90 días - 250 m²",
+      "mcdonalds": "Construido en 20 días - 500 m²",
+      "campo": "Construido en 60 días - 300 m²"
+    }
+  },
+  "common": {
+    "built_in_days": "Construido en {{days}} días",
+    "area": "{{area}} m²",
+    "company_footer": "Empresa especializada en construcción con SteelPanel"
+  }
+} 
