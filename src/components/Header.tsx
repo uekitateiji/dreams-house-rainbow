@@ -96,12 +96,12 @@ const Header = () => {
         >
           <div className="flex flex-col h-full">
             {/* Header do Modal */}
-            <div className="flex justify-between items-center p-6 border-b border-slate-200">
+            <div className="flex justify-between items-center p-4 border-b border-slate-200">
               <div className="">
                 <img
                   src="/logo/dreams-house-logo-header.svg"
                   alt="Dreams House Logo"
-                  className="h-8 w-auto object-contain"
+                  className="h-12 w-auto object-contain"
                 />
               </div>
               <button
