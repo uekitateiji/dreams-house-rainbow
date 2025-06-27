@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import { useIsMobile } from "@/hooks/use-mobile"
 import { useTranslation } from 'react-i18next';
+import dreamsHouseLogo from '../assets/logo/dreams-house-logo.svg';
 
 const HeroSection = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
@@ -29,7 +30,7 @@ const HeroSection = () => {
   return (
     <section id="hero" className="relative h-[95vh] md:h-screen flex items-center justify-center overflow-hidden px-8 pt-24 md:pt-28 bg-gradient-to-br bg-slate-200">
       {/* Background container with padding */}
-      <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden md:p-14 pt-16 md:pt-32">
+      <div className="absolute top-0 left-0 right-0 bottom-0 overflow-hidden">
         {/* Image carousel box */}
         <div className="relative w-full h-full overflow-hidden">
           {heroImages.map((image, index) => (
@@ -54,15 +55,19 @@ const HeroSection = () => {
       </div>
 
       <div className="relative z-10 text-center text-white md:px-6">
-        <motion.h1
+        <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
           transition={{ duration: 1, delay: 0.3, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="text-2xl md:text-6xl font-bold tracking-wider mb-6"
+          className="mb-6 flex justify-center"
         >
-          {t('hero.title')}
-        </motion.h1>
+          <img
+            src={dreamsHouseLogo}
+            alt="Dreams House"
+            className="h-12 md:h-24 w-auto"
+          />
+        </motion.div>
 
         {isMobile ? (
           <motion.p

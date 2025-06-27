@@ -123,7 +123,7 @@ const PortfolioSection = () => {
           whileInView={{ opacity: 0.7, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-8 md:mt-16 flex justify-center items-center space-x-4 md:space-x-8"
+          className="mt-8 md:mt-24 md:mb-4 flex justify-center items-center space-x-4 md:space-x-8 gap-12"
         >
           {partnerLogos.map((logo, index) => (
             <motion.div

@@ -12,7 +12,7 @@ const AboutSection = () => {
           whileInView={{ opacity: 1, x: 0 }}
           transition={{ duration: 1.2, delay: 0.1, ease: "easeOut" }}
           viewport={{ once: true }}
-          className="relative h-64 md:h-[650px] order-2 md:order-1 md:col-span-3"
+          className="relative h-64 md:h-full order-2 md:order-1 md:col-span-3"
         >
           <img src="/images/image-1.png" alt="Dreams House Construction" className="w-full h-full object-cover shadow-2xl" />
         </motion.div>
@@ -38,9 +38,22 @@ const AboutSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
-            className="text-slate-600 leading-relaxed mb-6 md:mb-8 text-base md:text-lg break-words overflow-hidden font-lato text-center md:text-left"
+            className="text-slate-600 leading-relaxed mb-6 md:mb-4 text-base md:text-lg break-words overflow-hidden font-lato text-center md:text-left"
           >
             {t('about.description')}
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            viewport={{ once: true }}
+            className="flex justify-center md:justify-start"
+          >
+            <img
+              src="/logo/quick-house.png"
+              alt="QuikHouse Logo"
+              className="h-24 md:h-28 object-contain "
+            />
           </motion.div>
         </div>
       </div>

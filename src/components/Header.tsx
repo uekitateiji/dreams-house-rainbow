@@ -25,9 +25,16 @@ const Header = () => {
     <>
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 py-4 px-4 md:px-6">
-        <div className="max-w-7xl mx-auto flex justify-end items-center">
-
-
+        <div className="max-w-7xl mx-auto flex justify-between items-center">
+          
+          {/* Logo no canto superior esquerdo */}
+          <div className="flex items-center">
+            <img
+              src="/logo/dreams-house-logo-header.svg"
+              alt="Dreams House Logo"
+              className="h-12 md:h-12 w-auto"
+            />
+          </div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex space-x-8">
@@ -92,9 +99,9 @@ const Header = () => {
             <div className="flex justify-between items-center p-6 border-b border-slate-200">
               <div className="">
                 <img
-                  src={dreamsHouseLogo}
+                  src="/logo/dreams-house-logo-header.svg"
                   alt="Dreams House Logo"
-                  className="w-20 h-2w-20 object-contain"
+                  className="h-8 w-auto object-contain"
                 />
               </div>
               <button

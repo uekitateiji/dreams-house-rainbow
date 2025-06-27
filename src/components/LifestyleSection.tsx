@@ -38,9 +38,27 @@ const LifestyleSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
-            className="text-slate-600 leading-relaxed mb-6 md:mb-8 text-sm md:text-lg break-words overflow-hidden font-lato text-center md:text-left"
+            className="text-slate-600 leading-relaxed mb-6 md:mb-10 text-sm md:text-lg break-words overflow-hidden font-lato text-center md:text-left"
           >
             {t('lifestyle.description')}
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            viewport={{ once: true }}
+            className="flex justify-center md:justify-start gap-8"
+          >
+            <img
+              src="/logo/miami-dade.png"
+              alt="QuikHouse Logo"
+              className="h-10 md:h-16 object-contain "
+            />
+            <img
+              src="/logo/patented.png"
+              alt="QuikHouse Logo"
+              className="h-10 md:h-16 object-contain "
+            />
           </motion.div>
         </div>
       </div>

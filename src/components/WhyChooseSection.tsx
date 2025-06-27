@@ -32,7 +32,7 @@ const WhyChooseSection = () => {
       </section>
 
       {/* Bottom Image Section */}
-      <section className="w-full h-full md:h-full md:px-16 md:pb-16 bg-gradient-to-br bg-slate-200">
+      <section className="w-full h-full md:h-full bg-gradient-to-br bg-slate-200">
         <motion.div
           initial={{ opacity: 0, scale: 0 }}
           whileInView={{ opacity: 1, scale: 1 }}

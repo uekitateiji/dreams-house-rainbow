@@ -28,7 +28,6 @@ const SustainabilityCard = ({ icon, title, description, delay }: SustainabilityC
                 <path d={icon} />
               </svg>
             </div>
-            <div className="absolute -top-2 -right-2 w-6 h-6 bg-slate-500 rounded-full opacity-20 group-hover:scale-150 transition-transform duration-500"></div>
           </div>
           
           <h3 className="text-lg md:text-xl font-semibold text-slate-800 mb-3 font-audrey">

@@ -30,9 +30,22 @@ const SystemSection = () => {
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.5 }}
             viewport={{ once: true }}
-            className="text-slate-600 leading-relaxed mb-6 md:mb-8 text-base md:text-lg break-words overflow-hidden font-lato text-center md:text-left"
+            className="text-slate-600 leading-relaxed mb-6 md:mb-12 text-base md:text-lg break-words overflow-hidden font-lato text-center md:text-left"
           >
             {t('system.description')}
+          </motion.div>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8, delay: 0.7 }}
+            viewport={{ once: true }}
+            className="flex justify-center md:justify-end"
+          >
+            <img
+              src="/logo/steel-panel.png"
+              alt="QuikHouse Logo"
+              className="h-10 md:h-10 object-contain"
+            />
           </motion.div>
         </div>
 
@@ -45,6 +58,7 @@ const SystemSection = () => {
         >
           <img src="/images/image-2.png" alt="SteelPanel System" className="w-full h-full object-cover shadow-2xl" />
         </motion.div>
+        
       </div>
     </section>
   );
