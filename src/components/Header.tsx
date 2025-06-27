@@ -26,7 +26,7 @@ const Header = () => {
       {/* Navigation */}
       <nav className="fixed top-0 w-full bg-white/90 backdrop-blur-sm z-50 py-4 px-4 md:px-6">
         <div className="max-w-7xl mx-auto flex justify-between items-center">
-          
+
           {/* Logo no canto superior esquerdo */}
           <div className="flex items-center">
             <img
@@ -71,17 +71,28 @@ const Header = () => {
             <div className="mr-4">
               <LanguageSelector />
             </div>
+
           </div>
 
-          {/* Mobile Menu Button */}
-          <button
-            onClick={() => setIsMobileMenuOpen(true)}
-            className="md:hidden p-2 text-slate-600 hover:text-slate-800 transition-colors"
-          >
-            <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-            </svg>
-          </button>
+
+          <div className="flex items-center">
+            {/* Language Selector */}
+            <div className="mr-4">
+              <LanguageSelector />
+            </div>
+
+            {/* Mobile Menu Button */}
+            <button
+              onClick={() => setIsMobileMenuOpen(true)}
+              className="md:hidden p-2 text-slate-600 hover:text-slate-800 transition-colors "
+            >
+
+              <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+
+          </div>
         </div>
       </nav>
 
@@ -97,13 +108,17 @@ const Header = () => {
           <div className="flex flex-col h-full">
             {/* Header do Modal */}
             <div className="flex justify-between items-center p-4 border-b border-slate-200">
+
               <div className="">
                 <img
                   src="/logo/dreams-house-logo-header.svg"
                   alt="Dreams House Logo"
                   className="h-12 w-auto object-contain"
                 />
+
               </div>
+
+
               <button
                 onClick={() => setIsMobileMenuOpen(false)}
                 className="p-2 text-slate-600 hover:text-slate-800 transition-colors"

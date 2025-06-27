@@ -4,34 +4,34 @@ import { useTranslation } from 'react-i18next';
 
 const PortfolioSection = () => {
   const { t } = useTranslation();
-  
+
   const portfolioProjects = [
     {
       id: "fazenda-boa-vista",
       title: t('portfolio.projects.fazenda'),
       description: t('portfolio.descriptions.fazenda'),
-      image: "https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=1200",
+      image: "/images/portafolio-1.jpg",
       delay: 0.1
     },
     {
       id: "casa-alphaville",
       title: t('portfolio.projects.alphaville'),
       description: t('portfolio.descriptions.alphaville'),
-      image: "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?w=1200",
+      image: "/images/portafolio-2.jpg",
       delay: 0.2
     },
     {
       id: "mcdonalds",
       title: t('portfolio.projects.mcdonalds'),
       description: t('portfolio.descriptions.mcdonalds'),
-      image: "/images/hero-image-5.png",
+      image: "/images/portafolio-3.jpg",
       delay: 0.3
     },
     {
       id: "casa-campo",
       title: t('portfolio.projects.campo'),
       description: t('portfolio.descriptions.campo'),
-      image: "/images/hero-image-2.png",
+      image: "/images/portafolio-4.jpg",
       delay: 0.4
     }
   ];

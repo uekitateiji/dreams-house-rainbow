@@ -19,11 +19,11 @@
   },
   "about": {
     "title": "ABOUT US",
-    "description": "QuikHouse is the factory responsible for the development and production of the SteelPanel construction system, an industrialized technology that offers agility, resistance and precision in civil construction. To bring your projects to reality with excellence, QuikHouse has the strategic alliance of Dreams House, a company specialized in the execution of residential and commercial works. Together, they offer a complete solution: from the manufacturing of panels to the final assembly on site."
+    "description": "QuickHouse is the factory responsible for the development and production of the SteelPanel construction system, an industrialized technology that offers agility, resistance and precision in civil construction. To bring your projects to reality with excellence, QuickHouse has the strategic alliance of Dreams House, a company specialized in the execution of residential and commercial works. Together, they offer a complete solution: from the manufacturing of panels to the final assembly on site."
   },
   "system": {
     "title": "STEELPANEL SYSTEM",
-    "description": "SteelPanel is an exclusive construction system from QuikHouse. It consists of self-supporting metallic panels made of galvanized steel that fulfill structural and divisory functions. Being prefabricated, they guarantee speed in installation, high resistance, durability and flexibility to apply various finishes. It is an ideal solution for buildings up to two stories, both residential and commercial, with the quality guarantee of an industrialized system."
+    "description": "SteelPanel is an exclusive construction system from QuickHouse. It consists of self-supporting metallic panels made of galvanized steel that fulfill structural and divisory functions. Being prefabricated, they guarantee speed in installation, high resistance, durability and flexibility to apply various finishes. It is an ideal solution for buildings up to two stories, both residential and commercial, with the quality guarantee of an industrialized system."
   },
   "lifestyle": {
     "title": "WE DON'T BUILD HOUSES, WE TRANSFORM YOUR LIFESTYLE",
@@ -31,14 +31,14 @@
   },
   "sustainability": {
     "title": "SUSTAINABILITY",
-    "subtitle": "The QuikHouse system is an industrialized and productive way that eliminates the use of cement and mortar in its composition, significantly reducing energy consumption and promoting sustainable construction of the future.",
+    "subtitle": "The QuickHouse system is an industrialized and productive way that eliminates the use of cement and mortar in its composition, significantly reducing energy consumption and promoting sustainable construction of the future.",
     "cost_competitive": {
       "title": "COMPETITIVE COST",
-      "description": "QuikHouse builds with maximum economy aligned with sustainable practices, offering efficient and profitable solutions for each project."
+      "description": "QuickHouse builds with maximum economy aligned with sustainable practices, offering efficient and profitable solutions for each project."
     },
     "execution_time": {
       "title": "SHORTER EXECUTION TIME",
-      "description": "The QuikHouse system is a simplified model that makes the entire construction process faster and with superior final results."
+      "description": "The QuickHouse system is a simplified model that makes the entire construction process faster and with superior final results."
     },
     "organization": {
       "title": "EFFICIENT ORGANIZATION",
@@ -65,4 +65,4 @@
     "area": "{{area}} m²",
     "company_footer": "Company specialized in SteelPanel construction"
   }
-} 
+}
