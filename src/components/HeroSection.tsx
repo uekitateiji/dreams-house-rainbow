@@ -65,7 +65,7 @@ const HeroSection = () => {
           <img
             src={dreamsHouseLogo}
             alt="Dreams House"
-            className="h-12 md:h-24 w-auto"
+            className="h-16 md:h-24 w-auto"
           />
         </motion.div>
 
@@ -75,7 +75,7 @@ const HeroSection = () => {
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 1.2, delay: 0.6, ease: "easeOut" }}
             viewport={{ once: true }}
-            className="text-[27px] md:text-2xl font-light md:mb-8 mx-auto tracking-widest font-audrey leading-none"
+            className="text-[20px] md:text-2xl font-light md:mb-8 mx-auto tracking-widest font-audrey leading-none"
             dangerouslySetInnerHTML={{ __html: t('hero.description_mobile') }}
           />
         ) : (

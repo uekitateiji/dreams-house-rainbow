@@ -80,7 +80,7 @@ const SustainabilitySection = () => {
   return (
     <section id="sustentabilidade" className="py-10 md:py-20 px-4 md:px-6 bg-gradient-to-br from-slate-100 via-blue-50 to-slate-200 relative overflow-hidden">
       <div className="max-w-full mx-auto relative z-10 px-2">
-        <div className="text-center mb-8 md:mb-14 pt-8">
+        <div className="text-center mb-8 md:mb-14 md:pt-8">
           <motion.h2
             initial={{ opacity: 0, y: 10 }}
             whileInView={{ opacity: 1, y: 0 }}

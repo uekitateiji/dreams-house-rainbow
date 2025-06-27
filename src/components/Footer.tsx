@@ -23,9 +23,9 @@ const Footer = () => {
 
                         {/* Contact Info */}
                         <div className="text-center md:text-left">
-                            <p className="text-white font-medium mb-1">+598 9 274 3331</p>
-                            <p className="text-slate-300 mb-1">dreamshouse33.com</p>
-                            <p className="text-slate-300">contacto@dreamshouse33.com</p>
+                            <p className="text-white font-medium mb-1 cursor-pointer">+598 9 274 3331</p>
+                            <p className="text-slate-300 mb-1 cursor-pointer">dreamshouse33.com</p>
+                            <p className="text-slate-300 cursor-pointer">contacto@dreamshouse33.com</p>
                         </div>
                     </div>
 
