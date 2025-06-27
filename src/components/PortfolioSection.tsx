@@ -51,7 +51,17 @@ const PortfolioSection = () => {
       src: "/logo/miami-dade.png",
       alt: "Miami Dade",
       delay: 0.7
-    }
+    },
+    {
+      src: "/logo/quick-house.png",
+      alt: "Quik House",
+      delay: 0.9
+    },
+    {
+      src: "/logo/patented.png",
+      alt: "Patented",
+      delay: 1.1
+    },
   ];
 
   return (
@@ -116,14 +126,16 @@ const PortfolioSection = () => {
             </motion.div>
           ))}
         </div>
+      </div>
 
-        {/* Partner Logos */}
+      {/* Partner Logos - Full Width */}
+      <div className="w-full px-4 md:px-6">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 0.7, y: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           viewport={{ once: true }}
-          className="mt-8 md:mt-24 md:mb-4 flex justify-center items-center space-x-4 md:space-x-8 gap-12"
+          className="mt-8 md:mt-24 md:mb-4 flex flex-wrap justify-center md:justify-evenly items-center gap-8 md:gap-12 max-w-full"
         >
           {partnerLogos.map((logo, index) => (
             <motion.div
@@ -132,7 +144,7 @@ const PortfolioSection = () => {
               whileInView={{ opacity: 1, scale: 1 }}
               transition={{ duration: 0.6, delay: logo.delay }}
               viewport={{ once: true }}
-              className="flex items-center justify-center"
+              className="flex items-center justify-center flex-shrink-0"
             >
               <img
                 src={logo.src}
